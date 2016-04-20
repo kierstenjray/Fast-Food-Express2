@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+    //Background
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+
+
+
+        //Background image
+
+
+
+
+
+
+
+        //Screen Title text
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Orders"
+            android:id="@+id/bigcurrentorders"
+            android:textSize="50dp"
+            android:textIsSelectable="false"
+            android:textAlignment="center"
+            android:textColor="#fa040304"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+
+
+        //Text to view food customization
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:text="Seafood Platter"
+            android:fontFamily="sans-serif-light"
+            android:background="#4d1b1a1a"
+            android:layout_marginTop="129dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        //Delete button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/deletebttn"
+            android:fontFamily="sans-serif-light"
+            android:background="#4d1b1a1a"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignParentEnd="true" />
+
+        //logo
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        //Inserts divider
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:background="#991b1a1a"
+            android:id="@+id/divider"
+            android:layout_alignStart="@+id/bigcurrentorders"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignEnd="@+id/bigcurrentorders" />
+
+    </RelativeLayout>
+</ScrollView>

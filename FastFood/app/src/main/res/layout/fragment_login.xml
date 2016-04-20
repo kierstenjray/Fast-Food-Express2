@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/bkgrnd"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height= "720dp" />
+
+    //Button to allow user to login
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="Login"
+        android:id="@+id/sendbutton"
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:layout_centerHorizontal="true"
+        android:onClick="selectRestaurant"
+        android:clickable="true"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/forgotpassword"
+        android:layout_alignEnd="@+id/registertext" />
+
+    //Text field to enter email address
+    <EditText
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Emailaddressfield"
+        android:hint= "  Email Address"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:minHeight="30dp"
+        android:minWidth="300dp"
+        android:textAlignment="center" />
+
+
+    //Text field to enter password
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordField"
+        android:fontFamily="sans-serif-light"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:minHeight="30dp"
+        android:minWidth="300dp"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/Emailaddressfield"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+    //Forgot password link
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password? Click here."
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/forgotpassword"
+        android:layout_below="@+id/passwordField"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f5121213"
+        android:onClick="forgotPassword"/>
+
+    //Create account prompt
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don&apos;t have an account? Create an account here."
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/registertext"
+        android:textColor="#f5121213"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/sendbutton"
+        android:layout_centerHorizontal="true" />
+
+    //Create account button
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create An Account"
+        android:id="@+id/createacctbutton"
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="createAccount"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/registertext"
+        android:layout_centerHorizontal="true" />
+
+
+    //Screen title text
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let&apos;s Get Started!"
+        android:id="@+id/Setuptext"
+        android:textSize="40dp"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:textColor="#fa040304"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:fontFamily="sans-serif-thin"/>
+
+
+    //Divider between sections
+    <View
+        android:layout_width="365dp"
+        android:layout_height="2dp"
+        android:background="#991b1a1a"
+        android:id="@+id/divider"
+        android:layout_below="@+id/Setuptext"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center">
+
+    //Background image
+    <ImageView
+        android:src="@drawable/bkgrnd"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height= "720dp" />
+
+
+    //Email text field
+
+    <EditText
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Emailaddressfield"
+        android:text= "  Email Address"
+        android:minHeight="30dp"
+        android:minWidth="300dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    //Screen title text
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Reset"
+        android:id="@+id/bigpasswordreset"
+        android:textSize="50dp"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:textColor="#fa040304"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    //Divider between sections
+    <View
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:background="#991b1a1a"
+        android:id="@+id/divider"
+        android:layout_below="@+id/bigpasswordreset"
+        android:layout_centerHorizontal="true" />
+
+    //password reset prompt
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#fa040304"
+        android:text=" Please enter your email below so that we can send you your
+            password."
+        android:id="@+id/resetinstructions"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:layout_marginTop="115dp"
+        android:layout_below="@+id/bigpasswordreset"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp" />
+
+    //Button for user to send password
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/sendbutton"
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:minHeight="35dp"
+        android:minWidth="300dp"
+        android:clickable="true"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center">
+
+    <ImageView
+        android:src="@drawable/bkgrnd"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height= "720dp" />
+
+
+
+    //Screen Title text
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:id="@+id/screentitle1"
+        android:textSize="50dp"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:textColor="#fa040304"
+        android:layout_marginTop="175dp"
+        android:layout_below="@+id/bannerbg"
+        android:layout_centerHorizontal="true" />
+
+    //Divider between sections
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:background="#991b1a1a"
+        android:id="@+id/divider"
+        android:layout_below="@+id/screentitle1"
+        android:layout_centerHorizontal="true" />
+
+    //Review order text prompt
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Please review your order and proceed to checkout to complete your order."
+        android:id="@+id/summaryinstruct"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/screentitle1"
+        android:layout_centerHorizontal="true" />
+
+    //Order one text
+
+    //Customization1 text
+
+
+    //Place order button
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:id="@+id/pay"
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:minHeight="35dp"
+        android:minWidth="100dp"
+        android:clickable="true"
+        android:onClick="checkOut"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/list"
+        android:layout_alignParentEnd="true" />
+
+    //Back button
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="#4d1b1a1a"
+        android:id="@+id/backbutton"
+        android:fontFamily="sans-serif-light"
+        android:minHeight="35dp"
+        android:minWidth="100dp"
+        android:clickable="true"
+        android:onClick="viewmenu"
+        android:layout_alignTop="@+id/pay"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/summaryinstruct"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/list"
+        android:layout_below="@+id/summaryinstruct"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

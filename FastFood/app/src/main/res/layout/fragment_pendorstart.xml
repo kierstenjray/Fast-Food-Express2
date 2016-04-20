@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/bkgrnd"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height= "720dp" />
+
+
+    //Screen Title text
+    <TextView
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View pending orders"
+        android:id="@+id/screentitle1"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:textColor="#fa040304"
+        android:layout_below="@+id/clock"
+        android:layout_alignParentEnd="true" />
+
+
+    //Second screen title text
+    <TextView
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start new order"
+        android:id="@+id/screentitle3"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:textColor="#fa040304"
+        android:layout_alignTop="@+id/screentitle1"
+        android:layout_alignParentStart="true" />
+
+
+    //inserts clock image
+    <ImageView
+        android:src="@drawable/clock"
+        android:id="@+id/clock"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@+id/arrow"
+        android:layout_alignStart="@+id/screentitle1"
+        android:layout_marginStart="41dp"
+        android:clickable="true"
+        android:onClick="pending" />
+
+    //inserts arrow image
+    <ImageView
+        android:src="@drawable/arrow"
+        android:id="@+id/arrow"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:onClick="selectRestaurant"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/screentitle1"
+        android:layout_marginStart="-180dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:layout_marginTop="-130dp"
+        android:layout_toEndOf="@+id/arrow"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

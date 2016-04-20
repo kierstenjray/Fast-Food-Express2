@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+    //Background
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+        <ImageView
+            android:src="@drawable/bkgrnd"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height= "720dp" />
+
+
+        //Banner background
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bannerbg"
+            android:layout_marginEnd="56dp"
+            android:layout_marginTop="62dp" />
+
+        //Create account button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/sendbutton"
+            android:fontFamily="sans-serif-light"
+            android:background="#4d1b1a1a"
+            android:minHeight="35dp"
+            android:minWidth="300dp"
+            android:clickable="true"
+            android:onClick="logIn"
+            android:layout_below="@+id/passwordField2"
+            android:layout_alignStart="@+id/passwordField2"
+            android:layout_marginTop="97dp" />
+
+        //create account text box label
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/bigcreateaccntext"
+            android:textSize="50dp"
+            android:textIsSelectable="false"
+            android:textAlignment="center"
+            android:textColor="#fa040304"
+            android:layout_alignTop="@+id/bannerbg"
+            android:layout_centerHorizontal="true" />
+
+        //Divider between sections
+        <View
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#991b1a1a"
+            android:id="@+id/divider"
+            android:layout_below="@+id/bigcreateaccntext"
+            android:layout_centerHorizontal="true" />
+
+        //First name text field
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname"
+            android:text="  First Name"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/bigcreateaccntext"
+            android:layout_centerHorizontal="true" />
+
+        //Last name text field
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:text="  Last Name"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_marginTop="195dp"
+            android:layout_alignStart="@+id/fname" />
+
+
+        //email address text field label
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Emailaddressfield2"
+            android:text="  Email Address"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_alignStart="@+id/passwordField2"
+            android:layout_marginTop="237dp" />
+
+
+        //Password text field
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordField2"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_marginTop="280dp"
+            android:layout_alignStart="@+id/lname" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    //Background
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+        <ImageView
+            android:src="@drawable/bkgrnd"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height= "720dp" />
+
+
+
+        //banner background
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bannerbg"
+            android:layout_marginEnd="56dp"
+            android:layout_marginTop="62dp" />
+
+        //Screen Title text
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:id="@+id/screentitle1"
+            android:textSize="50sp"
+            android:textIsSelectable="false"
+            android:textAlignment="center"
+            android:textColor="#fa040304"
+            android:layout_marginTop="175dp"
+            android:layout_below="@+id/bannerbg"
+            android:layout_centerHorizontal="true" />
+
+        //Divider between sections
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="#991b1a1a"
+            android:id="@+id/divider"
+            android:layout_below="@+id/screentitle1"
+            android:layout_centerHorizontal="true" />
+
+        //Review order text prompt
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Please enter your credit card number to complete your purchase."
+            android:id="@+id/summaryinstruct"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/screentitle1"
+            android:layout_centerHorizontal="true" />
+
+        //Order one text
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total                     $6.76"
+            android:id="@+id/totalText"
+            android:textSize="38dp"
+            android:textIsSelectable="false"
+            android:background="#4d1b1a1a"
+            android:minHeight="52dp"
+            android:minWidth="300dp"
+            android:gravity="left"
+            android:textColor="#fa040304"
+            android:checked="true"
+            android:layout_marginTop="63dp"
+            android:layout_below="@+id/ccnum"
+            android:layout_centerHorizontal="true" />
+
+        //Customization1 text
+
+
+        //Place order button
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"
+            android:id="@+id/pay"
+            android:fontFamily="sans-serif-light"
+            android:background="#4d1b1a1a"
+            android:minHeight="35dp"
+            android:minWidth="200dp"
+            android:layout_marginTop="39dp"
+            android:layout_alignEnd="@+id/screentitle1"
+            android:layout_below="@+id/totalText"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="confirmation"/>
+
+        //Back button
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="fill_parent"
+            android:layout_height="380dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:layout_alignBottom="@+id/divider"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname"
+            android:text="First Name"
+            android:inputType="textEmailAddress"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/summaryinstruct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp" />
+
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:text="Last Name"
+            android:inputType="textEmailAddress"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/fname"
+            android:layout_alignStart="@+id/fname" />
+
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ccnum"
+            android:text="Credit Card Number"
+            android:inputType="textEmailAddress"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/lname"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exp"
+            android:text="Expiration Date"
+            android:inputType="textEmailAddress"
+            android:minHeight="30dp"
+            android:minWidth="300dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/ccnum"
+            android:layout_centerHorizontal="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/screentitle1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/frameLayout"></FrameLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

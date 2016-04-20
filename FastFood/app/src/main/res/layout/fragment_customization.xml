@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //Image view to hold radio buttons
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bannerbg"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="62dp" />
+
+    //Text to view customization option1
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ketchup"
+        android:id="@+id/restaurant1"
+        android:textSize="38dp"
+        android:textIsSelectable="false"
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:minHeight="52dp"
+        android:minWidth="300dp"
+        android:gravity="left"
+        android:textColor="#fa040304"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:dividerHeight="2dp"
+        android:checked="true"
+        android:layout_below="@+id/bannerbg" />
+
+    //Inserts divider
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#c0c0c0"
+        android:id="@+id/divider1"
+        android:layout_above="@+id/restaurant2"
+        android:layout_alignParentStart="true" />
+
+    //Text to view customization option2
+    <RadioButton
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tartar Sauce"
+        android:id="@+id/restaurant2"
+        android:textSize="38dp"
+        android:textIsSelectable="false"
+        android:background="#4d1b1a1a"
+        android:minHeight="52dp"
+        android:minWidth="300dp"
+        android:gravity="left"
+        android:textColor="#fa040304"
+        android:layout_below="@+id/restaurant1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    //Inserts divider
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#c0c0c0"
+        android:id="@+id/divider2"
+        android:layout_alignBottom="@+id/restaurant2"
+        android:layout_alignParentStart="true" />
+
+    //Text to view customization option3
+    <RadioButton
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cocktail Sauce"
+        android:id="@+id/restaurant3"
+        android:textSize="38dp"
+        android:textIsSelectable="false"
+        android:background="#4d1b1a1a"
+        android:minHeight="52dp"
+        android:minWidth="300dp"
+        android:gravity="left"
+        android:textColor="#fa040304"
+        android:checked="false"
+        android:layout_below="@+id/restaurant2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    //Inserts divider
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#c0c0c0"
+        android:id="@+id/divider3"
+        android:layout_above="@+id/okbutton1"
+        android:layout_alignParentStart="true" />
+
+    //Ok button for user to select
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/okbutton1"
+        android:fontFamily="sans-serif-light"
+        android:textSize="38dp"
+        android:textIsSelectable="false"
+        android:background="#4d1b1a1a"
+        android:minHeight="52dp"
+        android:minWidth="300dp"
+        android:gravity="center"
+        android:textColor="#fa040304"
+        android:checked="false"
+        android:layout_below="@+id/restaurant3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:outlineProvider="background"
+        android:singleLine="false"
+        android:onClick="viewMenu"/>
+
+</RelativeLayout>

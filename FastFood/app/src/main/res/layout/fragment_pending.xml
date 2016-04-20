@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+    //Background
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+
+        //Background image to create banner
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bannerbg"
+            android:layout_marginEnd="56dp"
+            android:layout_marginTop="62dp" />
+
+        //Screen Title text
+
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending Orders"
+            android:id="@+id/bigcurrentorders"
+            android:textSize="50dp"
+            android:textIsSelectable="false"
+            android:textAlignment="center"
+            android:textColor="#fa040304"
+            android:layout_alignBottom="@+id/bannerbg"
+            android:layout_centerHorizontal="true" />
+
+        //Divider between sections
+        <View
+            android:layout_width="335dp"
+            android:layout_height="2dp"
+            android:background="#991b1a1a"
+            android:id="@+id/divider"
+            android:layout_below="@+id/bigcurrentorders"
+            android:layout_alignEnd="@+id/bigcurrentorders" />
+
+        //Order one text
+
+        //Customization1 text
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On my way!"
+            android:id="@+id/omwbutton"
+            android:fontFamily="sans-serif-light"
+            android:background="#4d1b1a1a"
+            android:clickable="true"
+            android:onClick="onTheWay"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/list"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/backbutton"
+            android:fontFamily="sans-serif-light"
+            android:background="#4d1b1a1a"
+            android:clickable="true"
+            android:onClick="pendorstart"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/list"
+            android:layout_alignLeft="@id/omwbutton"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"
+            android:layout_below="@+id/bigcurrentorders"
+            android:layout_alignParentStart="true"
+            />
+    </RelativeLayout>
+</ScrollView>

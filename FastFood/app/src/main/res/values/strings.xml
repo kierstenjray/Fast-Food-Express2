@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FastFood</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="parse_app_id">Gokvsi0NGFg7I87lMaRgLjz6XILpfR1AofzzxKOF</string>
+    <string name="parse_client_key">cmVUZO1VJRrGSRBbc3LmdYluCjxisZKv5nEIx1fl</string>
+    <string name="error_intro">Opps! </string>
+    <string name="error_blank_firstname">First Name field blank</string>
+    <string name="error_blank_lastname">Last Name field blank</string>
+    <string name="error_blank_password">Password field Blank</string>
+    <string name="error_blank_email">Email Address field blank</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Logging you in&#8230;</string>
+    <string name="progress_signup">Signing you up&#8230;</string>
+</resources>

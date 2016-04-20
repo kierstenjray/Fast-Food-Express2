@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center">
+
+
+    <ImageView
+        android:src="@drawable/bkgrnd"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height= "720dp" />
+
+    //logo
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="-45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"/>
+
+    //Thank you text
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="Thank you for your order! Your order has been been placed."
+        android:id="@+id/summaryinstruct"
+        android:autoText="false"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_alignParentStart="true" />
+
+    //Pick up later button
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pendorstart"
+        android:id="@+id/pulbutton"
+        android:text="I&apos;ll pick it up later."
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true" />
+
+
+    //On my way button
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="I'm on the way!"
+        android:fontFamily="sans-serif-light"
+        android:background="#4d1b1a1a"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="onTheWay"/>
+
+
+</RelativeLayout>
